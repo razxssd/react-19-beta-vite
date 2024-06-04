@@ -1,2 +1,12 @@
-# react-19-beta-vite
-A new repo to explore React 19 Beta features (Making with Vite)
+# React 19 + Vite
+
+I used this repository while I was working on the React 19 talk for The Communities Bay.
+
+You can see the talk here: [React 19 News by Eduard Capanu on YouTube](https://www.youtube.com/watch?v=kvv2pDcimv4)
+
+The Project contains examples of:
+
+- New Document Metadata feature
+- useOptimistic implementation with example
+
+
