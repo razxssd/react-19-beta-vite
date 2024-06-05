@@ -7,6 +7,9 @@ You can see the talk here: [React 19 News by Eduard Capanu on YouTube](https://w
 The Project contains examples of:
 
 - New Document Metadata feature
+- The React Compiler
 - useOptimistic implementation with example
+- useActionStatus implementation with example
+- useFormState implementation with example
 
 
