@@ -25,39 +25,46 @@ function App() {
             <h2>Vite + React running version: <br/>{version}</h2>
             <p>Uncomment the features in the code to test them</p>
             <div className="card">
-                {/* HOOKS */}
+                {/* --- HOOKS --- */}
 
                 {/*
                 <p>useOptimistic</p>
                 <CompUseOptimistic/>
                 */}
+
                 {/*
                 <p>useActionState</p>
                 <CompUseActionState/>
                 */}
+
                 {/*
                 <p>Without useFormStatus</p>
                 <CompWithoutUseFormStatus/>
                  */}
+
                 {/*
                 <p>With useFormStatus</p>
                 <CompUseFormStatus/>
                 */}
+
+
                 {/*
-                <p>Without use Hook</p>
+                 <p>Without use Hook</p>
                 <CompWithoutUseHook/>
                 */}
+
                 {/*
                 <p>With use Hook</p>
                 <CompWithUseHook/>
                 */}
 
-                {/* OTHER FEATURES */}
+                {/* --- OTHER FEATURES --- */}
 
                 {/*
                 <p>Document Metdata</p>
                 <DocumentMetadata/>
                 */}
+
                 {/*
                 <p>Compilator Component</p>
                 <Compilator/>

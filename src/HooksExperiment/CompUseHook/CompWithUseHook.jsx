@@ -3,7 +3,7 @@ import ErrorBoundary from "../../components/ErrorBoundary.jsx";
 import {Button} from "../../components/Button.jsx";
 
 const TODO_ENDPOINT = 'https://jsonplaceholder.typicode.com/todos?_limit=10'
-const POSTS_ENDPOINT = 'https://jsonplaceholder.typicode.com/posts?_limit=10'
+const POSTS_ENDPOINT = 'https://ejsonplaceholder.typicode.com/posts?_limit=10'
 
 function CompWithUseHook() {
     const [url, setUrl] = useState(TODO_ENDPOINT)
@@ -21,7 +21,7 @@ function CompWithUseHook() {
                 <Suspense fallback={<h1>Loading...</h1>}>
                     <DetailList fetchDataPromise={fetchDataPromise} shouldCallList={shouldCallList}/>
 
-                    {/*<Button isActive={shouldCallList} text={'Should call list?'} onClick={() => setShouldCallList(!shouldCallList)} className={'mt-10'} />*/}
+                    <Button isActive={shouldCallList} text={'Should call list?'} onClick={() => setShouldCallList(!shouldCallList)} className={'mt-10'} />
                 </Suspense>
             </ErrorBoundary>
         </>
@@ -31,11 +31,12 @@ function CompWithUseHook() {
 const DetailList = ({fetchDataPromise, shouldCallList}) => {
     let list = []
     // We cannot declare here the promise otherwise we will receive a React Warning
-    list = use(fetchDataPromise)
+    // list = use(fetchDataPromise)
 
-    /*if (shouldCallList) {
+    console.log('shouldCallList: ', shouldCallList)
+    if (shouldCallList) {
         list = use(fetchDataPromise)
-    }*/
+    }
 
     return <div>
         {list.map(data => (<div key={data.id}>{data.title}</div>))}
